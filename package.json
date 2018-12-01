@@ -1,0 +1,30 @@
+{
+  "name": "plusclubrn",
+  "version": "1.0.0",
+  "description": "plusclub in rn",
+  "main": "index.android.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WithLei/plusClub.git"
+  },
+  "keywords": [
+    "react",
+    "native"
+  ],
+  "author": "renly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WithLei/plusClub/issues"
+  },
+  "homepage": "https://github.com/WithLei/plusClub#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.6.3",
+    "react-native": "^0.57.7"
+  },
+  "devDependencies": {}
+}
