@@ -7,9 +7,10 @@
 <img src="https://github.com/WithLei/plusClub/blob/master/screenshots/pluslogo_round.jpg" width="80" hegiht="80" align=center />  
 
 ## 项目介绍
-[plusClub_RN](http://118.24.0.78/#/home)校园论坛
+[plusClub](http://118.24.0.78/#/home)校园论坛 ReactNative端
 支持主题切换、发帖、回帖、课程表、校园卡收支[开发中]
 
+Android端项目：[WithLei/plusClub](https://github.com/WithLei/plusClub)  
 Web端项目：[Robinson28years/lsuplusclub](https://github.com/Robinson28years/lsuplusclub)  
 前移动端项目：[xiaoshidefeng/PLUS-for-Android](https://github.com/xiaoshidefeng/PLUS-for-Android)
 
