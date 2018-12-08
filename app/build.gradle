@@ -74,5 +74,5 @@ dependencies {
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
 
     // react native
-    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.facebook.react:react-native:0.57.7'
 }

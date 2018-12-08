@@ -22,6 +22,7 @@ import com.android.renly.plusclub_rn.injector.components.DaggerHomeFragComponent
 import com.android.renly.plusclub_rn.injector.modules.HomeFragModule;
 import com.android.renly.plusclub_rn.module.base.BaseFragment;
 import com.android.renly.plusclub_rn.R;
+import com.android.renly.plusclub_rn.rninandroid.MyReactActivity;
 import com.android.renly.plusclub_rn.widget.CircleImageView;
 import com.android.renly.plusclub_rn.utils.DateUtils;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
@@ -155,6 +156,7 @@ public class HomeFragment extends BaseFragment implements HomeFragView{
                 break;
             case R.id.iv_home_search:
                 ToastProgramError();
+                gotoActivity(MyReactActivity.class);
                 break;
             case R.id.tip_login:
                 Intent intent = new Intent(mActivity, LoginActivity.class);

@@ -26,7 +26,7 @@ allprojects {
             url "https://jitpack.io"
         }
         maven {
-            url "$rootDir/../node_modules/react-native/android"
+            url "$rootDir/node_modules/react-native/android"
         }
     }
 }
@@ -39,7 +39,7 @@ ext {
     compileSdk = 27
     minSdk = 21
     targetSdk = 27
-    buildTools = "27.0.3"
+    buildTools = "23.0.1"
     support = "27.1.1"
     VERSIONCODE = 2
     VERSIONNAME = "1.1"

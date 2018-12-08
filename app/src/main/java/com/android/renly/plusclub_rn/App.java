@@ -15,9 +15,17 @@ import com.android.renly.plusclub_rn.injector.components.DaggerApplicationCompon
 import com.android.renly.plusclub_rn.injector.modules.ApplicationModule;
 import com.android.renly.plusclub_rn.utils.DateUtils;
 import com.android.renly.plusclub_rn.utils.toast.ToastUtils;
+import com.facebook.react.ReactApplication;
+import com.facebook.react.ReactNativeHost;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.shell.MainReactPackage;
+import com.facebook.soloader.SoLoader;
 import com.squareup.leakcanary.LeakCanary;
 
-public class App extends Application {
+import java.util.Arrays;
+import java.util.List;
+
+public class App extends Application implements ReactApplication {
 
     private static Context context;
     private NetworkReceiver receiver;
@@ -35,6 +43,11 @@ public class App extends Application {
         initInjector();
         initConfig();
         regReciever();
+        initRN();
+    }
+
+    private void initRN() {
+        SoLoader.init(this, /* native exopackage */ false);
     }
 
     public static ApplicationComponent getAppComponent() {
@@ -343,4 +356,26 @@ public class App extends Application {
     // 查询学生课程表信息参数及值
     public static final String queryScheduleParam = "gnmkdm";
     public static final String queryScheduleValue = "N121603";
+
+    private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+
+        @Override
+        public boolean getUseDeveloperSupport() {
+            return BuildConfig.DEBUG;
+        }
+
+        @Override
+        protected List<ReactPackage> getPackages() {
+            return Arrays.<ReactPackage>asList(
+                    new MainReactPackage()
+                    //将我们创建的包管理器给添加进来
+
+            );
+        }
+    };
+
+    @Override
+    public ReactNativeHost getReactNativeHost() {
+        return mReactNativeHost;
+    }
 }
