@@ -24,7 +24,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "react": "^16.6.3",
-    "react-native": "^0.57.7"
+    "react-native": "^0.70.4"
   },
   "devDependencies": {}
 }
