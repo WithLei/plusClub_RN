@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/WithLei/plusClub#readme",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "react": "^16.6.3",
     "react-native": "^0.57.7"
   },
